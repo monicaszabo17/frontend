@@ -1,0 +1,61 @@
+
+.container{
+  width:375px;
+  height:667px;
+  background-color: #fff;
+  border:1px solid #73A17A;
+  background-image: url("src/assets/planner.jpg");
+  background-size: cover;
+}
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=checkbox]{
+  color: #73A17A;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+h2,p{
+  color:#246b47;
+  font-family: Roboto;
+  font-weight: 500px;
+  text-align:center;
+}
+hr {
+  border: 1px solid #73A17A;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color:#73A17A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.container {
+  padding: 16px;
+  background-image: url("src/assets/planner.jpg");
+  background-size: cover;
+  
+}
+

@@ -1,0 +1,36 @@
+
+
+<div class="container col-md-6 offset-md-3 mt-5">
+  <div class = "col-sm-12">
+<form [formGroup]="myForm" method="POST" (ngSubmit)="signIn(myForm)" class="form-group" novalidate>
+
+    <h2>Please, sign in.</h2>
+    
+  
+    <div class="input-container form-group" >
+      <i class="fa fa-envelope icon"></i>
+      <input class="input-field form-control" 
+              type="text" 
+              placeholder="Email" 
+              name="email" 
+              formControlName="email"
+              required 
+              >
+    </div>
+    
+    <div class="input-container form-group">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field form-control" 
+              type="password" 
+              placeholder="Password" 
+              name="password" 
+              formControlName="password"
+              required
+              >
+             
+    </div>
+  
+    <button type="submit" class="btn" [disabled]="!myForm.valid">Sign in</button>
+  </form>
+</div>
+</div>

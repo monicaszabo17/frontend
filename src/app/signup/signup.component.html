@@ -1,0 +1,73 @@
+
+
+<div class="container col-md-6 offset-md-3 mt-5">
+       <div class = "col-sm-12">
+     <form [formGroup]="myForm" method="POST" (ngSubmit)="signUp(myForm)" class="form-group" novalidate>
+     
+         <h2>Welcome, sign up!</h2>
+
+         <div class="input-container form-group" >
+             
+              <input class="input-field form-control" 
+                      type="text" 
+                      placeholder="Username" 
+                      name="username" 
+                      formControlName="username" 
+                      required
+                      >
+            </div>
+
+            <div class="input-container form-group" >
+              
+              <input class="input-field form-control" 
+                      type="text" 
+                      placeholder="Email" 
+                       name="email" 
+                      formControlName="email" 
+                      required
+                      >
+            </div>
+            
+            <div class="input-container form-group">
+              
+              <input class="input-field form-control" 
+                      type="password" 
+                      placeholder="Password" 
+                      name="password" 
+                      formControlName="password"
+                      required
+                      >
+                     
+            </div>
+
+         <div class="input-container form-group" >
+              
+              <input class="input-field form-control" 
+                      type="text" 
+                      placeholder="Gender" 
+                      name="gender" 
+                      formControlName="gender" 
+                      required
+                      >
+            </div>
+
+
+         <div class="input-container form-group" >
+              
+              <input class="input-field form-control" 
+                      type="text" 
+                      placeholder="Address" 
+                      name="address" 
+                      formControlName="address" 
+                      required
+                      >
+            </div>
+       
+         
+                  
+       
+         <button type="submit" class="btn"[disabled]="!myForm.valid" >Sign up</button>
+       </form>
+     </div>
+     </div>
+     

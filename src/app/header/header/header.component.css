@@ -1,0 +1,27 @@
+.navbar{
+    background-color: #73A17A;
+}
+
+ .navbar-brand, .navbar-link{
+     color: #fff;
+ }
+
+ a {
+     color:#fff;
+ }
+ .navbar-brand{
+    font-family: Roboto;
+    font-weight: 400px;
+ }
+
+ .navbar-toggler{
+    background-color: #fff;
+    border: #73A17A;
+ }
+ .navbar-toggler:hover{
+     border: 0.5px,solid,black;
+ }
+
+ .navbar-toggler-icon{
+     background-color: #73A17A;
+ }
